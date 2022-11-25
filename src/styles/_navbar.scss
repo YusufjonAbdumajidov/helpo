@@ -1,0 +1,51 @@
+nav{
+   @include flexCenter();
+   justify-content: space-between;
+   height: 10vh;
+   width: 94%;
+   margin: 0 auto;
+   h2{
+    font-size: 28px;
+    color: $textColor;
+    transform: translateX(20px)
+   }
+   .navIcons{
+        @include flexCenter();
+        span{
+            margin: 0 10px;
+            font-size: 24px;
+            cursor: pointer;
+            @include flexCenter();
+            padding: 8px;
+            border-radius: $smallRadius;
+            box-shadow: 0 4px 6px rgb(85, 85, 85, .4);
+            color: $textColor;
+        }
+        span:nth-child(2){
+            margin-right: 30px;
+        }
+   }
+   .navIcons img{
+      height: 50px;
+      cursor: pointer;
+   }
+   .clockContainer{
+      @include border();
+      position: absolute;
+      right: 12%;
+      top: 10%;
+      width: 200px;
+      height: 220px;
+      z-index: 1111;
+      background-color: #fff;
+      padding: 14px;
+      border-radius: 20px;
+      box-shadow: 0 8px 10px rgb(28, 28, 28, .7);
+      .clockCloseBtn{
+        position: absolute;
+        right: 14px;
+        cursor: pointer;
+      }
+   }
+  
+}

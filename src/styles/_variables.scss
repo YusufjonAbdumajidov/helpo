@@ -1,0 +1,15 @@
+$textColor : #2E365B;
+$backgroundColor : #7689DE;
+$smallRadius : 10px;
+
+@mixin border { border: 1px solid #111;}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin backgroundPosition {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

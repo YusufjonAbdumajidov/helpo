@@ -1,0 +1,69 @@
+.homeContainer{
+    @include flexCenter();
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left:  40px;
+    h1{
+        color: $textColor;
+    }
+}
+
+.newsWrapper{
+    @include flexCenter();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .newsContainer{
+        position: relative;
+        @include flexCenter();
+        flex-direction: column;
+        align-items: flex-start;
+        width: 440px;
+        height: 220px;
+        margin: 20px 0;
+        padding: 10px 16px;
+        border-radius: 30px;
+        transition: all .4s;
+        cursor: pointer;
+        box-shadow: 0  7px 10px rgb(42, 42, 42, .4);
+        &:hover{
+            transform: scale3d(1.1,1.1,1.1);
+        }
+        h2{
+            color: #fff;
+            z-index: 111;
+            font-weight: 400;
+        }
+        p{
+            color: #cbcbcb; 
+            z-index: 111;
+        }
+        .newContainer_wrapper{
+            position: absolute;
+            background-color: rgb(5, 5, 5, .6);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            border-radius: 30px;
+            z-index: 11;
+        }
+    }
+    .newsContainer:nth-child(1){
+        background-image: url("https://media.gq-magazine.co.uk/photos/5d13ad354113b55f8e46adb7/4:3/w_1704,h_1278,c_limit/New-England-Patriots-06-GQ-18Oct17_getty_b.jpg");
+        @include backgroundPosition();
+    }
+    .newsContainer:nth-child(2){
+        width: 700px;
+        background-image: url("https://www.japantimes.co.jp/wp-content/uploads/2022/06/np_file_166989-scaled.jpeg");
+        @include backgroundPosition();
+    }
+    .newsContainer:nth-child(3){
+        width: 700px;
+        background-image: url("https://www.brown.edu/sites/default/files/styles/wide_sml/public/2021-01/20170908_COMM_HayesJack01_CROP_0.jpg?h=549abecf&itok=47Ihq0rt");
+        @include backgroundPosition();
+        background-position: top;
+    }
+    .newsContainer:nth-child(4){
+        background-image: url("https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg");
+        @include backgroundPosition();
+    }
+}
