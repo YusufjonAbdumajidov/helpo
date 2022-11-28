@@ -8,7 +8,7 @@ const Home = () => {
     <div className="newsWrapper">
     {
       news.map((item)=> {
-          const { id, title, description,  } = item;
+          const { id, title, description, } = item;
           return <section key={id} className="newsContainer">
             <div className="newContainer_wrapper"></div>
               <h2>{title}</h2>
@@ -17,7 +17,7 @@ const Home = () => {
       })
     }
     </div>
-    <p>view all</p>
+    <p className='viewAllBtn'>view all news</p>
   </div>
 }
 

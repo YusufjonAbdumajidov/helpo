@@ -7,7 +7,7 @@ nav{
    h2{
     font-size: 28px;
     color: $textColor;
-    transform: translateX(20px)
+    transform: translateX(15px)
    }
    .navIcons{
         @include flexCenter();
@@ -20,6 +20,11 @@ nav{
             border-radius: $smallRadius;
             box-shadow: 0 4px 6px rgb(85, 85, 85, .4);
             color: $textColor;
+            transition: all .3s;
+            &:hover{
+               background-color: $textColor;
+               color: #fff;
+            }
         }
         span:nth-child(2){
             margin-right: 30px;
@@ -30,22 +35,40 @@ nav{
       cursor: pointer;
    }
    .clockContainer{
-      @include border();
+      // @include border();
+      @include flexCenter();
       position: absolute;
       right: 12%;
       top: 10%;
-      width: 200px;
+      width: 270px;
       height: 220px;
       z-index: 1111;
       background-color: #fff;
       padding: 14px;
       border-radius: 20px;
       box-shadow: 0 8px 10px rgb(28, 28, 28, .7);
+      transition: all .5s;
+      animation-name: dropDown;
+      animation-duration: .5s;
+      animation-timing-function: ease-in-out;
       .clockCloseBtn{
         position: absolute;
+        top: 14px;
         right: 14px;
         cursor: pointer;
+        color: $textColor;
+      }
+      .time{
+         font-size: 48px;
+         color: $textColor;
+         font-weight: 600;
+         transition: all .5s;
       }
    }
   
+}
+
+@keyframes dropDown {
+   from { transform: translateY(-200px);}
+   to { transform: translateY(0px);}
 }

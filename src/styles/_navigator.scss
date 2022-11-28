@@ -1,5 +1,7 @@
 .navigatorContainer{
+    // @include border();
     @include flexCenter();
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px 10px;

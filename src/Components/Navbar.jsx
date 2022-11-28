@@ -14,9 +14,9 @@ const Navbar = () => {
         <h2>helpo</h2>
     </div>
     <div className="navIcons">
-        <span><AiOutlineClockCircle onClick={()=> {
+        <span onClick={()=> {
           dispatch(openClock())
-        }}/></span> 
+        }}><AiOutlineClockCircle /></span> 
         <span><AiOutlineCalendar /></span> 
         <img src={image} alt="" />
     </div>

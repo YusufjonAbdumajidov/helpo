@@ -1,10 +1,23 @@
 .homeContainer{
     @include flexCenter();
+    // @include border();
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     padding-left:  40px;
     h1{
         color: $textColor;
+    }
+    .viewAllBtn{
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        cursor: pointer;
+        color: #838383;
+        transition: all 0.4s;
+        &:hover{
+            color: #292929;
+        }
     }
 }
 
@@ -17,7 +30,7 @@
         @include flexCenter();
         flex-direction: column;
         align-items: flex-start;
-        width: 440px;
+        width: 470px;
         height: 220px;
         margin: 20px 0;
         padding: 10px 16px;
@@ -25,9 +38,9 @@
         transition: all .4s;
         cursor: pointer;
         box-shadow: 0  7px 10px rgb(42, 42, 42, .4);
-        &:hover{
-            transform: scale3d(1.1,1.1,1.1);
-        }
+        // &:hover{
+        //     transform: scale3d(1.1,1.1,1.1);
+        // }
         h2{
             color: #fff;
             z-index: 111;
@@ -52,12 +65,12 @@
         @include backgroundPosition();
     }
     .newsContainer:nth-child(2){
-        width: 700px;
+        width: 740px;
         background-image: url("https://www.japantimes.co.jp/wp-content/uploads/2022/06/np_file_166989-scaled.jpeg");
         @include backgroundPosition();
     }
     .newsContainer:nth-child(3){
-        width: 700px;
+        width: 740px;
         background-image: url("https://www.brown.edu/sites/default/files/styles/wide_sml/public/2021-01/20170908_COMM_HayesJack01_CROP_0.jpg?h=549abecf&itok=47Ihq0rt");
         @include backgroundPosition();
         background-position: top;
@@ -66,4 +79,5 @@
         background-image: url("https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg");
         @include backgroundPosition();
     }
+
 }
