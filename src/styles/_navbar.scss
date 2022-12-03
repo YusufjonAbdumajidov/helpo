@@ -46,10 +46,10 @@ nav{
       background-color: #fff;
       padding: 14px;
       border-radius: 20px;
-      box-shadow: 0 8px 10px rgb(28, 28, 28, .7);
+      box-shadow: 0 4px 6px rgba(53, 53, 53, 0.4);
       transition: all .5s;
       animation-name: dropDown;
-      animation-duration: .5s;
+      animation-duration: .8s;
       animation-timing-function: ease-in-out;
       .clockCloseBtn{
         position: absolute;
@@ -69,6 +69,6 @@ nav{
 }
 
 @keyframes dropDown {
-   from { transform: translateY(-200px);}
+   from { transform: translateY(-400px);}
    to { transform: translateY(0px);}
 }
