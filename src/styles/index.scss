@@ -4,7 +4,6 @@
 @import './navigator';
 @import './home';
 @import './calculator';
-
 *{
     margin: 0;
     padding: 0;
@@ -13,17 +12,13 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
 main{
-    // position: relative;
     width: 94%;
     height: 90vh;
     margin: 0 auto;
     @include flexCenter();
-    // @include border();
     justify-content: space-between;
- 
- 
+
     .mainContainer{
         position: relative;
         width: 90%;
