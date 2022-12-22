@@ -25,7 +25,6 @@ const Calculator = () => {
         <div className="current-operand">{formatOperand(currentOperand)}</div>
       </section>
       <div className="calButtons">
-        
           <section onClick={() => dispatch(deleteDigit())}>del</section>
           <section onClick={() => dispatch(chooseOperation('%'))}>%</section>
           <section onClick={()=> dispatch(clear())}>ac</section>
@@ -43,7 +42,7 @@ const Calculator = () => {
           <section onClick={() => dispatch(chooseOperation('-'))}>-</section>
           <section onClick={()=> dispatch(addDigit(0))}>0</section>
           <section onClick={()=> dispatch(addDigit("."))}>.</section>
-          <section  onClick={()=> dispatch(calculate())}>=</section>
+          <section onClick={()=> dispatch(calculate())}>=</section>
           <section onClick={() => dispatch(chooseOperation('+'))} >+</section>
       </div>
     </div>

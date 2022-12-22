@@ -16,7 +16,6 @@ const Navigator = () => {
         <Link to='/game'><GiGamepadCross className='navIcon'/></Link>
         <Link to='/Settings'><FiSettings className='navIcon'/></Link>   
     </div>
-    
     </>
   )
 }
