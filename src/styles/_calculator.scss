@@ -1,21 +1,15 @@
 .calculatorContainer{
-    width: 100%;
-    height: 90vh;
-    padding: 20px;
-    padding-top: 40px;
-    @include flexCenter();
+    @include mainContainer;
     flex-direction: column;
     h1{
-        position: absolute;
-        top: 40px;
-        left: 20px;
-        color: $textColor;
+        @include headerPosition();
     }
     .calculator{
         position: relative;
         width: 600px;
         height: 540px;
         padding-top: 0px;
+        user-select: none;
         .display{
            width: 600px;
            height: 80px;

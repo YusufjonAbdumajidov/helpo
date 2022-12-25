@@ -1,4 +1,4 @@
-.weather_container{
+.tasksContainer{
     @include mainContainer;
     h1{
         @include headerPosition();
@@ -6,7 +6,7 @@
     section{
         position: absolute;
         top: 140px;
-        .weatherBtn{
+        .tasksBtn{
             @include btnContainer;
             &:hover{
                 background-color: $textColor;
@@ -16,19 +16,5 @@
     }
     input{
         @include inputContainer;
-    }
-    .weatherData{
-        @include flexCenter();
-        flex-direction: column;
-        p{
-            font-size: 24px;
-        }
-        p:nth-child(2){
-            font-size: 94px;
-            span{
-                font-size: 20px;
-                cursor: pointer;
-            }
-        }
     }
 }

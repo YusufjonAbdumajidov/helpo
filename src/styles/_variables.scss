@@ -13,3 +13,35 @@ $smallRadius : 10px;
     background-repeat: no-repeat;
     background-size: cover;
 }
+@mixin headerPosition{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    color: $textColor;
+}
+@mixin mainContainer{
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    padding-top: 40px;
+    @include flexCenter();
+    @include border;
+}
+
+@mixin inputContainer{
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid $textColor;
+    outline: none;
+    margin-right: 20px
+}
+@mixin btnContainer{
+    padding: 6px 18px;
+    border-radius: 10px;
+    color: $textColor;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    transition: all .3s;
+}

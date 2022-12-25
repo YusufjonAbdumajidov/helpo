@@ -21,23 +21,37 @@ const Weather = () => {
     }
   }
 
+  const showWeather = () => {
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${apiKey}`).then(
+        response => response.json()
+      ).then(
+        data => {
+          setWeatherData(data);
+          setCity("");
+        }
+      )
+  }
+
   const convertToCelsius = fahrenheit => {
     const cel = (fahrenheit - 32) * 5/9;
     console.log(cel);
     setShowCelsius(!showCelsius);
     setCelsius(Math.round(cel));
   }
-  console.log(weatherData);
+  
 
   return (
     <div className='weather_container'>
       <h1>Weather</h1>
+      <section>
         <input type="text" 
         className='input' 
         placeholder='enter city' 
         onChange={e => setCity(e.target.value)}
         value={city}
         onKeyDown={getWeather}/>
+        <button className="weatherBtn" onClick={showWeather}>Check</button>
+      </section>
         
         {typeof weatherData.main === "undefined" ? (
           <div>
