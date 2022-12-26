@@ -1,9 +1,10 @@
 .tasksContainer{
+    position: relative;
     @include mainContainer;
     h1{
         @include headerPosition();
     }
-    section{
+    form{
         position: absolute;
         top: 140px;
         .tasksBtn{
@@ -13,8 +14,55 @@
                 color: #fff;
             }
         }
+        .clearBtn{
+            @include btnContainer;
+            margin-left: 20px;
+            &:hover{
+                background-color: rgb(221, 41, 41);
+                color: #fff;
+            }
+        }
     }
     input{
         @include inputContainer;
+    }
+    .alert{
+        background-color: rgb(193, 42, 42);
+        color: #fff;
+        padding: 8px 10pc;
+        transition: all .3s;
+        border-radius: 10px;
+        position: absolute;
+        top: 5%;
+    }
+    .taskContainer{
+        position: absolute;
+        top: 36%;
+    }
+    .tasks{
+        position: relative;
+       
+        @include flexCenter();
+        background-color: rgb(234, 234, 234);
+        color: $textColor;
+        padding: 8px 20px;
+        margin: 6px 0;
+        border-radius: 6px;
+        .itemBtns{
+            margin-left: 20px;
+            @include flexCenter;
+            button{
+                border: none;
+                background: none;
+                margin: 0 8px;
+                cursor: pointer;
+            }
+            .editBtn{
+                color: $textColor;
+            }
+            .deleteBtn{
+                color: rgb(193, 42, 42);
+            }
+        }
     }
 }

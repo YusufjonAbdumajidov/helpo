@@ -25,7 +25,7 @@ $smallRadius : 10px;
     padding: 20px;
     padding-top: 40px;
     @include flexCenter();
-    @include border;
+    // @include border;
 }
 
 @mixin inputContainer{
