@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { GrClose } from "../assets/icons/icons";
 import { closeClock } from '../features/clock/clockSlice';
 import { useDispatch } from 'react-redux';
-const deg = 6;
+
 
 
 

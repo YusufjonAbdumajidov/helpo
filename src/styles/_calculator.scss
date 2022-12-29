@@ -1,9 +1,7 @@
 .calculatorContainer{
     @include mainContainer;
     flex-direction: column;
-    h1{
-        @include headerPosition();
-    }
+    h1{ @include headerPosition();}
     .calculator{
         position: relative;
         width: 600px;
@@ -21,10 +19,7 @@
            font-size: 32px;
            color: $textColor;
            box-shadow: 0 2px 6px rgb(54, 54, 54, .3);
-           .previous-operand{
-            font-size: 18px;
-           }
-        }
+           .previous-operand{ font-size: 18px;} }
         .calButtons{
             transform: translateY(20px);
             @include flexCenter();
@@ -42,11 +37,7 @@
                 color: $textColor;
                 box-shadow: 0 5px 8px rgb(54, 54, 54, .3);
                 transition: all .3s;
-                &:hover{
-                    box-shadow: 0 9px 12px rgb(54, 54, 54, .3);  
-                }
-                
-            }
+                &:hover{ box-shadow: 0 9px 12px rgb(54, 54, 54, .3);  }        }
             section:nth-child(1){color: #fff; background-color: rgb(244, 98, 98); width: 260px;}
             section:nth-child(2){background-color: $backgroundColor;}
             section:nth-child(3){background-color: $backgroundColor;}

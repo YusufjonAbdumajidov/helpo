@@ -26,9 +26,7 @@ nav{
                color: #fff;
             }
         }
-        span:nth-child(2){
-            margin-right: 30px;
-        }
+        span:nth-child(2){ margin-right: 30px; }
    }
    .navIcons img{
       height: 50px;
@@ -61,12 +59,9 @@ nav{
          font-size: 48px;
          color: $textColor;
          font-weight: 600;
-         transition: all .5s;
-      }
+         transition: all .5s;}
    }
-  
 }
-
 @keyframes dropDown {
    from { transform: translateY(-400px);}
    to { transform: translateY(0px);}

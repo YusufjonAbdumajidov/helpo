@@ -1,9 +1,7 @@
 .tasksContainer{
     position: relative;
     @include mainContainer;
-    h1{
-        @include headerPosition();
-    }
+    h1{@include headerPosition();  }
     form{
         position: absolute;
         top: 140px;
@@ -19,13 +17,10 @@
             margin-left: 20px;
             &:hover{
                 background-color: rgb(221, 41, 41);
-                color: #fff;
-            }
+                color: #fff; }
         }
     }
-    input{
-        @include inputContainer;
-    }
+    input{ @include inputContainer; }
     .alert{
         background-color: rgb(193, 42, 42);
         color: #fff;
@@ -54,16 +49,12 @@
                 border: none;
                 background: none;
                 margin: 0 8px;
-                cursor: pointer;
-            }
-            .editBtn{
-                color: $textColor;
-            }
+                cursor: pointer;}
+            .editBtn{ color: $textColor; }
             .deleteBtn{
                 position: absolute;
                 right: 10px;
-                color: rgb(193, 42, 42);
-            }
+                color: rgb(193, 42, 42);}
         }
     }
 }

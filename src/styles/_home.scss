@@ -4,9 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left:  40px;
-    h1{
-        color: $textColor;
-    }
+    h1{ color: $textColor; }
     .viewAllBtn{
         position: absolute;
         right: 0;
@@ -58,22 +56,17 @@
     }
     .newsContainer:nth-child(1){
         background-image: url("https://media.gq-magazine.co.uk/photos/5d13ad354113b55f8e46adb7/4:3/w_1704,h_1278,c_limit/New-England-Patriots-06-GQ-18Oct17_getty_b.jpg");
-        @include backgroundPosition();
-    }
+        @include backgroundPosition(); }
     .newsContainer:nth-child(2){
         width: 740px;
         background-image: url("https://www.japantimes.co.jp/wp-content/uploads/2022/06/np_file_166989-scaled.jpeg");
-        @include backgroundPosition();
-    }
+        @include backgroundPosition(); }
     .newsContainer:nth-child(3){
         width: 740px;
         background-image: url("https://www.brown.edu/sites/default/files/styles/wide_sml/public/2021-01/20170908_COMM_HayesJack01_CROP_0.jpg?h=549abecf&itok=47Ihq0rt");
         @include backgroundPosition();
-        background-position: top;
-    }
+        background-position: top;}
     .newsContainer:nth-child(4){
         background-image: url("https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg");
-        @include backgroundPosition();
-    }
-
+        @include backgroundPosition();}
 }

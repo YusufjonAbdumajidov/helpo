@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-
-
 const User = () => {
   const [name, setName] = useState("");
   const [major, setMajor] = useState("");
@@ -18,6 +16,8 @@ const User = () => {
       setName("");
       setMajor("");
       setStdID("");
+    }else {
+      console.log("Please fill the form")
     }
     
   }

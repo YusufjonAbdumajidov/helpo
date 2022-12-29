@@ -1,8 +1,6 @@
 .weather_container{
     @include mainContainer;
-    h1{
-        @include headerPosition();
-    }
+    h1{@include headerPosition();}
     section{
         position: absolute;
         top: 140px;
@@ -10,25 +8,18 @@
             @include btnContainer;
             &:hover{
                 background-color: $textColor;
-                color: #fff;
-            }
+                color: #fff; }
         }
     }
-    input{
-        @include inputContainer;
-    }
+    input{@include inputContainer; }
     .weatherData{
         @include flexCenter();
         flex-direction: column;
-        p{
-            font-size: 24px;
-        }
-        p:nth-child(2){
-            font-size: 94px;
+        p{font-size: 24px; }
+        p:nth-child(2){font-size: 94px;
             span{
                 font-size: 20px;
-                cursor: pointer;
-            }
+                cursor: pointer;}
         }
     }
 }
