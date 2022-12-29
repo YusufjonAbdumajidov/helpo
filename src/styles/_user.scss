@@ -1,0 +1,51 @@
+.userContainer{
+    position: relative;
+    @include mainContainer;
+    h1{
+        @include headerPosition();
+    }
+    form{
+        position: absolute;
+        left: 20px;
+        top: 180px;
+        @include flexCenter;
+        flex-direction: column;
+        input{
+            @include inputContainer;
+            margin: 10px 0;
+        }
+        button{
+            @include btnContainer;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            background-color: $textColor;
+            color: #fff;
+        }
+    }
+    .userInfo{
+        position: absolute;
+        right: 0;
+        top: 10%;
+        width: 840px;
+        padding: 40px;
+        color: $textColor;
+        @include flexCenter;
+        flex-wrap: wrap;
+        p{ 
+            margin: 20px 0;
+        }
+        h3{
+            margin: 20px 0;
+        }
+        section{
+            width: 500px;
+            height: 220px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(40, 40, 40, .4);
+        }
+    }
+}

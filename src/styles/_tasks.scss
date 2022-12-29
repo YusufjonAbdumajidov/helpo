@@ -41,7 +41,6 @@
     }
     .tasks{
         position: relative;
-       
         @include flexCenter();
         background-color: rgb(234, 234, 234);
         color: $textColor;
@@ -61,6 +60,8 @@
                 color: $textColor;
             }
             .deleteBtn{
+                position: absolute;
+                right: 10px;
                 color: rgb(193, 42, 42);
             }
         }
