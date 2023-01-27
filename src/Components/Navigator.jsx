@@ -12,7 +12,7 @@ const Navigator = () => {
         <Link to='/Tasks'>< FaTasks className='navIcon'/></Link>
         <Link to='/calculator'><AiOutlineCalculator className='navIcon'/></Link>
         <Link to='/Weather'><TiWeatherCloudy className='navIcon'/></Link>
-        <Link to='/courses'>< AiOutlineFileAdd className='navIcon'/></Link>
+        {/* <Link to='/courses'>< AiOutlineFileAdd className='navIcon'/></Link> */}
         <Link to='/game'><GiGamepadCross className='navIcon'/></Link>
         <Link to='/Settings'><FiSettings className='navIcon'/></Link>   
     </div>

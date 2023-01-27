@@ -4,6 +4,7 @@ import { AiOutlineClockCircle, AiOutlineCalendar } from '../assets/icons/icons';
 import image from "../assets/images/unknown_profile.jpg";
 import { openClock, closeClock } from '../features/clock/clockSlice';
 import Clock from './Clock';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -17,8 +18,9 @@ const Navbar = () => {
         <span onClick={()=> {
           dispatch(openClock())
         }}><AiOutlineClockCircle /></span> 
-        <span><AiOutlineCalendar /></span> 
-        <img src={image} alt="" />
+        {/* <span><AiOutlineCalendar /></span>  */}
+        {/* <img src={image} alt="" /> */}
+        <Link to='/User'><img src={image} alt="" /></Link>
     </div>
     {isOpen && <Clock />}
   </nav>
