@@ -1,0 +1,64 @@
+// body{
+//     font-family: 'Roboto', sans-serif; 
+//     margin: 0;
+//     padding: 0;
+//     font-size: 1.5em;
+//     text-align: center;
+//     background-color: #1b1523;
+//     color: #fff;
+// }
+.cardContainer{
+    user-select: none;
+    max-width: 860px;
+    margin: 40px auto;
+    button{
+        background: none;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 6px 12px;
+        border-radius: 4px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1em;
+        &:hover{
+            background: #16115f;
+            color: #fff;
+        }
+    }
+    .card-grid{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .card{
+        position: relative;
+        img{
+            width: 100%;
+            display: block;
+            border: 2px solid #fff;
+            border-radius: 6px;
+        }
+        .front{
+            transform: rotateY(90deg);
+            transition: all ease-in 0.2s;
+            position: absolute;
+        }
+        .flipped{
+            .front{
+                transform: rotateY(0deg);
+                transition-delay: 0.2s;
+            }
+        }
+        .back{
+            transition: all ease-in 0.2s;
+            transition-delay: .2s;
+        }
+        .flipped{
+            .back{
+                transform: rotateY(90deg);
+                transition-delay: 0s;
+            }
+        }
+    }
+}
