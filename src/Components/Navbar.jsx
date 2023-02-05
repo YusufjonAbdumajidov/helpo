@@ -9,10 +9,11 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { isOpen } = useSelector((store)=> store.clock);
+  const { randomColor } = useSelector((store) => store.theme);
   const dispatch = useDispatch();
   return <nav>
     <div className="logo">
-        <h2>helpo</h2>
+        <h2 style={{color: `${randomColor}`}}>helpo</h2>
     </div>
     <div className="navIcons">
         <span onClick={()=> {
